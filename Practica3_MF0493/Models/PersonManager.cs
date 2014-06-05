@@ -52,7 +52,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="ID">Id de la persona que queremos obtener. Es un int</param>
         /// <returns>Devuelve un objeto de tipo Person</returns>
-        public Person get(int ID) {
+        public static Person get(int ID) {
             Person per = new Person();
             try
             {
@@ -81,7 +81,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="p">Objeto Person que contiene todos los datos de la persona que se quiere insertar excepto el id que se genera automatico al insertar. </param>
         /// <returns>Devuelve el id de la persona insertada si todo va bien y -1 si no se inserta</returns>
-        public int add(Person p) {
+        public static int add(Person p) {
             try
             {
                 using (SchoolEntities db = new SchoolEntities())
@@ -109,7 +109,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="ID">id de la persona a eliminar de tipo int</param>
         /// <returns>devuelve true si se realizo correctamente y false si hubo algun problema</returns>
-        public bool remove(int ID) 
+        public static bool remove(int ID) 
         {
             try
             {

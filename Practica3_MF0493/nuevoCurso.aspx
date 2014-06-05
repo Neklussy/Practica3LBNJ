@@ -39,7 +39,6 @@
               <h1>Nuevo curso</h1>
              <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
              <table>
-             <tr><td>ID:</td><td><asp:TextBox ID="txtID" runat="server" CssClass="form-control" Width="200px"></asp:TextBox></td></tr>
              <tr><td>Nombre: </td><td><asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Creditos: </td><td><asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Departamento: </td><td><asp:TextBox ID="txtFechaInscripcion" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
