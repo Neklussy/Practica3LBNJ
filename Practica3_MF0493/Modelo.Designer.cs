@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'c:\users\desweb\documents\visual studio 2013\Projects\Practica3_MF0493\Practica3_MF0493\Modelo.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\desweb\Desktop\Practica3LBNJ\Practica3_MF0493\Modelo.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
