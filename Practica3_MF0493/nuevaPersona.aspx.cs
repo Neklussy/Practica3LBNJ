@@ -13,5 +13,10 @@ namespace Practica3_MF0493
         {
 
         }
+
+        protected void btnADDPersona(object sender, EventArgs e)
+        {
+
+        }
     }
 }

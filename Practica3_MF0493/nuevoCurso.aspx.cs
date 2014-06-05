@@ -13,5 +13,10 @@ namespace Practica3_MF0493
         {
 
         }
+
+        protected void btnADDCurso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

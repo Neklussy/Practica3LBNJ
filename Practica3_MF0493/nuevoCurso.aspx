@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Practica MF0493_3</a>
+                    <a class="navbar-brand" runat="server" href="~/">Índice</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
@@ -42,10 +42,10 @@
              <tr><td>Nombre: </td><td><asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Creditos: </td><td><asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Departamento: </td><td><asp:TextBox ID="txtFechaInscripcion" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td><asp:Button ID="Button1" runat="server" Text="Enviar" OnClick="Button1_Click" CssClass="btn btn-default" /></td></tr>
+             <tr><td><asp:Button ID="Button1" runat="server" Text="Alta" OnClick="btnADDCurso_Click" CssClass="btn btn-default" /></td></tr>
              
              </table>
-       <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" OnServerValidate="CustomValidator1_DataBinding"></asp:CustomValidator>
+       
     </div>
 
         <footer>
