@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica3_MF0493.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,22 @@ namespace Practica3_MF0493
 
         protected void btnADDPersona(object sender, EventArgs e)
         {
+            if (this.IsPostBack)
+            {
+                this.Validate();
+                if (this.IsValid)
+                {
+                    Person p = new Person();
+                    p.LastName = this.txtApellidos.Text;
+                    p.FirstName = this.txtNombre.Text;
+                    p.HireDate = Convert.ToDateTime(this.txtFechaIngreso.Text);
+                    p.EnrollmentDate = Convert.ToDateTime(this.txtFechaInscripcion.Text);
 
+                    int id = PersonManager.add(p);
+
+                    Response.Redirect("persona.aspx");
+                }
+            }
         }
     }
 }
