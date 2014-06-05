@@ -48,7 +48,7 @@
     <div class="col-md-4"></div>
         </div>
         <footer>
-            <p style="text-align: center">&copy; Proyecto MF0493_3 </p>
+            <p style="text-align: center">&copy; Proyecto MF0493_3</p>
         </footer>
 </body>
 </html>
