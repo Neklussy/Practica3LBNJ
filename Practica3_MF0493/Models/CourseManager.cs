@@ -5,20 +5,35 @@ using System.Web;
 
 namespace Practica3_MF0493.Models
 {
-    public class CourseManager
+    public class CourseManager: ICourseManager
     {
-        public List<Course> getAll(){
+        public List<Course> getAll()
+        {
+            List<Course> lst = new List<Course>();
             try
             {
-                List<Course> lst = new List<Course>();
-                
-                return lst;
+                using (SchoolEntities db = new SchoolEntities())
+                {
+                    
+                }
             }
-            catch (Exception ex)
+            catch
             {
-                throw new Exception("Error: " + ex.Message);
+
             }
-            
+            return null;
+        }
+        public Course get(int ID)
+        {
+            return null;
+        }
+        public int Add(Course c)
+        {
+            return -1;
+        }
+        public bool Remove(int ID)
+        {
+            return false;
         }
     }
 }

@@ -11,6 +11,6 @@ namespace Practica3_MF0493.Models
         public List<Person> getAll();
         public Person get(int ID);
         public int add(Person p);
-        public int remove(int iD);
+        public bool remove(int ID);
     }
 }
