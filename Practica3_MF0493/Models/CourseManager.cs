@@ -19,20 +19,11 @@ namespace Practica3_MF0493.Models
             {
                 using (SchoolEntities db = new SchoolEntities())
                 {
-                    var consulta = from tabla in db.Course
-                                   select tabla;
+                    var consulta = from tabla in db.Course select tabla;
 
-                    Course curso;
-                    foreach (Course c in consulta)
-                    {
-                        curso = new Course();
-                        curso.CourseID = c.CourseID;
-                        curso.Title = c.Title;
-                        curso.Credits = c.Credits;
-                        curso.DepartmentID = c.DepartmentID;
-                        
-                        lst.Add(curso);
-                    }
+                    lst = consulta.ToList();
+                                       
+                    
                 }
             }
             catch (SqlException sqlex)
@@ -59,9 +50,7 @@ namespace Practica3_MF0493.Models
             {
                 using (SchoolEntities db = new SchoolEntities())
                 {
-                    var consulta = from tabla in db.Course
-                                   where tabla.CourseID == ID
-                                   select tabla;
+                    var consulta = from tabla in db.Course where tabla.CourseID == ID select tabla;
 
                     curso = consulta.First();
                 }
