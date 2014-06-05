@@ -30,26 +30,26 @@
             </div>
         </div>
         <div class="container body-content">
-           <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                Menu principal
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Menu principal
+                    </div>
+                    <div class="panel-body">
+                        <a href="cursos.aspx" class="btn btn-block btn-lg btn-default">Listado de Cursos</a>
+                        <a href="nuevoCurso.aspx" class="btn btn-block btn-lg btn-default">Nuevo Curso</a>
+                        <a href="persona.aspx" class="btn btn-block btn-lg btn-default">Listado de Alumnos</a>
+                        <a href="nuevaPersona.aspx" class="btn btn-block btn-lg btn-default">Nuevo Alumno</a>
+                    </div>
+                </div>
             </div>
-            <div class="panel-body">
-                <a href="cursos.aspx" class="btn btn-block btn-lg btn-warning">Listado de Cursos</a>
-                <a href="nuevaPersona.aspx" class="btn btn-block btn-lg btn-warning">Nuevo Alumno</a>
-                <a href="persona.aspx" class="btn btn-block btn-lg btn-warning">Listado de Alumnos</a>
-                <a href="nuevoCurso.aspx" class="btn btn-block btn-lg btn-warning">Nuevo Curso</a>
-                
-            </div>
-        </div>
-     </div>
-    <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
         </div>
         <footer>
             <p style="text-align: center">&copy; Proyecto MF0493_3</p>
         </footer>
+    </form>
 </body>
 </html>
 
