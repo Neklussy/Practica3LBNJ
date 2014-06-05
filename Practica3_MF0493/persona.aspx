@@ -24,8 +24,8 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="../Default.aspx">Cerrar sessión</a></li>
-                        <li><a runat="server" href="nuevo.aspx">Nuevo Alumno</a></li>
+                        <li><a runat="server" href="nuevaPersona.aspx">Nuevo Alumno</a></li>
+                        <li><a runat="server" href="Default.aspx">Volver</a></li>
                     </ul>
                 </div>
             </div>
