@@ -8,6 +8,9 @@ namespace Practica3_MF0493.Models
 {
     interface IPersonaManager
     {
-        public List<Person> 
+        public List<Person> getAll();
+        public Person get(int ID);
+        public int add(Person p);
+        public int remove(int iD);
     }
 }

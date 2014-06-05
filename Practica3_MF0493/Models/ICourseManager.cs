@@ -8,5 +8,6 @@ namespace Practica3_MF0493.Models
 {
     interface ICourseManager
     {
+
     }
 }
