@@ -7,8 +7,10 @@
      <title>Practica MF0493_3</title>
     <link href="Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-datepicker.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap-datepicker.js"></script>
       <style type="text/css">
         input {
         margin: 10px 3px;
@@ -41,8 +43,8 @@
              <table>
              <tr><td>Apellidos: </td><td><asp:TextBox ID="txtApellidos" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Nombre: </td><td><asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td>Fecha de ingreso: </td><td><asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td>Fecha de inscripción: </td><td><asp:TextBox ID="txtFechaInscripcion" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
+             <tr><td>Fecha de ingreso: </td><td><asp:TextBox ID="txtFechaIngreso" data-provide="datepicker" data-date-format="dd/mm/yyyy" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
+             <tr><td>Fecha de inscripción: </td><td><asp:TextBox ID="txtFechaInscripcion" data-provide="datepicker" data-date-format="dd/mm/yyyy" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td><asp:Button ID="Button1" runat="server" Text="Alta" OnClick="btnADDPersona" CssClass="btn btn-default" /></td></tr>
              </table>
        

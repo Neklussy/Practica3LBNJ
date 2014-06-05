@@ -14,7 +14,7 @@ namespace PruebasUnitarias
         {
             List<Person> pers = new List<Person>();
             pers = PersonManager.getAll();
-            Assert.AreEqual(pers.Count,35);
+            Assert.AreEqual(pers.Count,44);
         }
         [TestMethod]
         public void getTest() {
@@ -31,11 +31,11 @@ namespace PruebasUnitarias
             
             int id = PersonManager.add(p);
 
-            Assert.AreEqual(p.PersonID, 39);
+            Assert.AreEqual(p.PersonID, 49);
         }
         [TestMethod]
         public void removeTest(){
-            bool elimina = PersonManager.remove(39);
+            bool elimina = PersonManager.remove(49);
             Assert.AreEqual(elimina,true);
         }
         
