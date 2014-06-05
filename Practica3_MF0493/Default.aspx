@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Practica MF0493_3</title>
+    <title>Practica MF0493</title>
     <link href="Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
