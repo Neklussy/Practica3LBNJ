@@ -18,5 +18,11 @@ namespace Practica3_MF0493
                 this.GridView1.DataBind();
             }
         }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
     }
 }

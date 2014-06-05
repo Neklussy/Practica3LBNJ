@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Practica3_MF0493.Models
 {
-    public class CourseManager: ICourseManager
+    public class CourseManager
     {
         /// <summary>
         /// metodo para listar los cursos

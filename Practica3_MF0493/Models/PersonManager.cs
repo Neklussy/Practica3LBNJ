@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Practica3_MF0493.Models
 {
-    public class PersonManager: IPersonaManager
+    public class PersonManager
     {
         /// <summary>
         /// Metodo que devuelve la lista de personas almacenadas en la base de datos
