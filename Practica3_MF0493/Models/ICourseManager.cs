@@ -8,9 +8,9 @@ namespace Practica3_MF0493.Models
 {
     interface ICourseManager
     {
-        public List<Course> getAll();
-        public Course get(int ID);
-        public int Add(Course c);
-        public bool Remove(int ID);
+        public static List<Course> getAll();
+        public static Course get(int ID);
+        public static int Add(Course c);
+        public static bool Remove(int ID);
     }
 }

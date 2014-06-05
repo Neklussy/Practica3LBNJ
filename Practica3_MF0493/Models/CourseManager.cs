@@ -12,7 +12,7 @@ namespace Practica3_MF0493.Models
         /// metodo para listar los cursos
         /// </summary>
         /// <returns>devuelve una lista de todos los cursos</returns>
-        public List<Course> getAll()
+        public static List<Course> getAll()
         {
             List<Course> lst = new List<Course>();
             try
@@ -52,7 +52,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="ID">identificador del curso que buscamos</param>
         /// <returns>devulve el curso si existe</returns>
-        public Course get(int ID)
+        public static Course get(int ID)
         {
             Course curso = new Course();
             try
@@ -83,7 +83,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="c">curso a añadir</param>
         /// <returns>devulve el identificador del nuevo curso o -1 si no se puede añadir</returns>
-        public int Add(Course c)
+        public static int Add(Course c)
         {
             try
             {
@@ -117,7 +117,7 @@ namespace Practica3_MF0493.Models
         /// </summary>
         /// <param name="ID">identificador del curso a eliminar</param>
         /// <returns>verdadero o falso segun si tuvo exito o no</returns>
-        public bool Remove(int ID)
+        public static bool Remove(int ID)
         {
 
             try
