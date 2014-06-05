@@ -21,8 +21,8 @@ namespace Practica3_MF0493.Models
                 {
                     var consulta = from e in db.Person
                                    select e;
-
-                    Person per;
+                    lstPersonas = consulta.ToList();
+                    /*Person per;
                     foreach (Person p in consulta)
                     {
                         per = new Person();
@@ -32,7 +32,7 @@ namespace Practica3_MF0493.Models
                         per.HireDate = p.HireDate;
                         per.EnrollmentDate = p.EnrollmentDate;
                         lstPersonas.Add(per);
-                    }
+                    }*/
       
                 }
             }
