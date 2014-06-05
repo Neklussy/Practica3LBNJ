@@ -7,8 +7,10 @@ namespace PruebasUnitarias
     public class TestPersonManager
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestgetAll()
         {
+            //Assert.AreEqual();
         }
+
     }
 }

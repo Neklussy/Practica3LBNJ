@@ -7,8 +7,9 @@ namespace PruebasUnitarias
     public class TestCourseManager
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test
         {
+            
         }
     }
 }
