@@ -144,6 +144,7 @@
       <DependentUpon>Modelo.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\CourseManager.cs" />
+    <Compile Include="Models\IPersonaManager.cs" />
     <Compile Include="Models\PersonManager.cs" />
     <Compile Include="nuevaPersona.aspx.cs">
       <DependentUpon>nuevaPersona.aspx</DependentUpon>
