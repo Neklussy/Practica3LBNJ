@@ -25,7 +25,7 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="nuevaPersona.aspx">Nuevo curso</a></li>
+                        <li><a runat="server" href="nuevoCurso.aspx">Nuevo curso</a></li>
                         <li><a runat="server" href="Default.aspx">Volver</a></li>
                     </ul>
                 </div>

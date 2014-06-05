@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica3_MF0493.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,15 @@ namespace Practica3_MF0493
 
         protected void btnADDCurso_Click(object sender, EventArgs e)
         {
+            Course curso = new Course();
 
+            curso.CourseID = Convert.ToInt32(this.txtID.Text);
+            curso.Credits = Convert.ToInt32(this.txtCreditos.Text);
+            curso.Title = this.txtNombre.Text;
+            curso.DepartmentID = Convert.ToInt32(this.txtDepartamento.Text);
+
+            CourseManager.Add(curso);
+            Response.Redirect("cursos.aspx");
         }
     }
 }

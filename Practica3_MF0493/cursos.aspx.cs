@@ -21,7 +21,11 @@ namespace Practica3_MF0493
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
+            string id = e.Values["CourseID"].ToString();
+            bool eliminado = CourseManager.Remove(Convert.ToInt32(id));
 
+            this.GridView1.DataSource = CourseManager.getAll();
+            this.GridView1.DataBind();
         }
     }
 }
