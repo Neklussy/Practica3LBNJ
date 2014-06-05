@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica3_MF0493.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,20 @@ namespace Practica3_MF0493
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+            this.GridView1.DataSource = CourseManager.getAll();
+            this.GridView1.DataBind();
+            }
+        }
 
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            string id = e.Values["CourseID"].ToString();
+            bool eliminado = CourseManager.Remove(Convert.ToInt32(id));
+
+            this.GridView1.DataSource = CourseManager.getAll();
+            this.GridView1.DataBind();
         }
     }
 }

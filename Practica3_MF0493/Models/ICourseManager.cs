@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Practica3_MF0493.Models
 {
-    interface ICourseManager
+    public interface ICourseManager
     {
-
+         List<Course> getAll();
+         Course get(int ID);
+         int Add(Course c);
+         bool Remove(int ID);
     }
 }

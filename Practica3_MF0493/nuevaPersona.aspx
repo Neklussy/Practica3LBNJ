@@ -7,8 +7,10 @@
      <title>Practica MF0493_3</title>
     <link href="Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-datepicker.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap-datepicker.js"></script>
       <style type="text/css">
         input {
         margin: 10px 3px;
@@ -25,7 +27,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Practica MF0493_3</a>
+                    <a class="navbar-brand" runat="server" href="~/">Índice</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
@@ -39,15 +41,13 @@
               <h1>Nuevo Alumno</h1>
              <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
              <table>
-             <tr><td>ID:</td><td><asp:TextBox ID="txtID" runat="server" CssClass="form-control" Width="200px"></asp:TextBox></td></tr>
              <tr><td>Apellidos: </td><td><asp:TextBox ID="txtApellidos" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
              <tr><td>Nombre: </td><td><asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td>Fecha de ingreso: </td><td><asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td>Fecha de inscripción: </td><td><asp:TextBox ID="txtFechaInscripcion" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
-             <tr><td><asp:Button ID="Button1" runat="server" Text="Enviar" OnClick="Button1_Click" CssClass="btn btn-default" /></td></tr>
-             
+             <tr><td>Fecha de ingreso: </td><td><asp:TextBox ID="txtFechaIngreso" data-provide="datepicker" data-date-format="dd/mm/yyyy" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
+             <tr><td>Fecha de inscripción: </td><td><asp:TextBox ID="txtFechaInscripcion" data-provide="datepicker" data-date-format="dd/mm/yyyy" runat="server" CssClass="form-control"></asp:TextBox></td></tr>
+             <tr><td><asp:Button ID="Button1" runat="server" Text="Alta" OnClick="btnADDPersona" CssClass="btn btn-default" /></td></tr>
              </table>
-       <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" OnServerValidate="CustomValidator1_DataBinding"></asp:CustomValidator>
+       
     </div>
 
         <footer>
