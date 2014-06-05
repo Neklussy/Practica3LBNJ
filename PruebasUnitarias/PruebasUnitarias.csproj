@@ -50,9 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CourseManagerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCourseManager.cs" />
-    <Compile Include="TestPersonManager.cs" />
+    <Compile Include="PersonManagerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Practica3_MF0493\Practica3_MF0493.csproj">
+      <Project>{ac5d26ad-83e7-4b28-84ec-90d10955b929}</Project>
+      <Name>Practica3_MF0493</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -4,12 +4,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace PruebasUnitarias
 {
     [TestClass]
-    public class TestCourseManager
+    public class CourseManagerTest
     {
         [TestMethod]
-        public void Test
+        public void TestMethod1()
         {
-            
         }
     }
 }
