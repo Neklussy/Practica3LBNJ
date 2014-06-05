@@ -13,7 +13,7 @@ namespace PruebasUnitarias
         public void getAllTest()
         {
             List<Course> lista = CourseManager.getAll();
-            Assert.AreEqual(lista.Count, 10);
+            Assert.AreEqual(lista.Count, 12);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace PruebasUnitarias
 
 
             c = new Course();
-            c.CourseID = 4062;
+            c.CourseID = 4064;
             c.Title = "berna";
             c.Credits = 4;
             c.DepartmentID = 7;
@@ -45,6 +45,14 @@ namespace PruebasUnitarias
             Assert.AreNotEqual(id,-1);
         }
 
-        
+        [TestMethod]
+        public void RemoveTest()
+        {
+            bool c = CourseManager.Remove(1);
+            Assert.AreEqual(c, false);
+
+            c = CourseManager.Remove(4064);
+            Assert.AreEqual(c, true);
+        }
     }
 }
