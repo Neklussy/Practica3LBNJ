@@ -7,15 +7,18 @@ namespace Practica3_MF0493.Models
 {
     public class CourseManager
     {
-        public int CourseID { get; set; }
-        public string Title { get; set; }
-        public int Credits { get; set; }
-        public int DepartmentID { get; set; }
-
-        public CourseManager()
-        {
-            this.Title = "curso";
-            this.Credits = 1;
+        public List<Course> getAll(){
+            try
+            {
+                List<Course> lst = new List<Course>();
+                
+                return lst;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+            
         }
     }
 }
