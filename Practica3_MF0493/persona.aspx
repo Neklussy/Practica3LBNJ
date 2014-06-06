@@ -36,7 +36,7 @@
             <h1>Listado de Alumnos</h1>
             <asp:UpdatePanel ID="UpdatePanel3" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover" CellPadding="4" EmptyDataText="No hay empresas en ese sector." BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" GridLines="None" ForeColor="Black" OnRowDeleting="GridView1_RowDeleting" AutoGenerateColumns="False">
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover" CellPadding="4" EmptyDataText="No hay empresas en ese sector." BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" GridLines="None" ForeColor="Black" OnRowDeleting="GridView1_RowDeleting" AutoGenerateColumns="False" AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging">
                         <Columns>
                             <asp:BoundField DataField="PersonID" HeaderText="Codigo">
                                 <HeaderStyle Width="120px" />
