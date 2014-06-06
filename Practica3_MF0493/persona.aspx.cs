@@ -29,5 +29,12 @@ namespace Practica3_MF0493
             this.GridView1.DataBind();
         }
 
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            this.GridView1.PageIndex = e.NewPageIndex;
+            this.GridView1.DataSource = PersonManager.getAll();
+            this.GridView1.DataBind();
+        }
+
     }
 }
