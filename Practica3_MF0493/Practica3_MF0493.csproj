@@ -70,6 +70,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Modelo.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="bin\Practica3_MF0493.XML" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-datepicker3.css" />
     <Content Include="Content\bootstrap-theme.css" />

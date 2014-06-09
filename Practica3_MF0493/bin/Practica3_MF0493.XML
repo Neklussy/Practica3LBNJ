@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Practica3_MF0493</name>
+    </assembly>
+    <members>
+        <member name="F:Practica3_MF0493.cursos.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.cursos.ScriptManager1">
+            <summary>
+            ScriptManager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.cursos.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.cursos.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.Default.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Practica3_MF0493.Models.CourseManager.getAll">
+            <summary>
+            metodo para listar los cursos
+            </summary>
+            <returns>devuelve una lista de todos los cursos</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.CourseManager.get(System.Int32)">
+            <summary>
+            metodo que devulve un curso dado su identificador
+            </summary>
+            <param name="ID">identificador del curso que buscamos</param>
+            <returns>devulve el curso si existe</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.CourseManager.Add(Practica3_MF0493.Course)">
+            <summary>
+            metodo que añade un curso nuevo
+            </summary>
+            <param name="c">curso a añadir</param>
+            <returns>devulve el identificador del nuevo curso o -1 si no se puede añadir</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.CourseManager.Remove(System.Int32)">
+            <summary>
+            metodo que elimina un curso dado su ID
+            </summary>
+            <param name="ID">identificador del curso a eliminar</param>
+            <returns>verdadero o falso segun si tuvo exito o no</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.ICourseManager.getAll">
+            <summary>
+            Metodo que devuelve la lista de cursos almacenados en la base de datos
+            </summary>
+            <returns>Devuelve un List de Course</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.ICourseManager.get(System.Int32)">
+            <summary>
+            Metodo que obtiene los datos del curso que se corresponde con le id que se pasa por parametro.
+            </summary>
+            <param name="ID">Id del curso que queremos obtener. Es un int</param>
+            <returns>Devuelve un objeto de tipo Course</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.ICourseManager.Add(Practica3_MF0493.Course)">
+            <summary>
+            Metodo para añadir un nuevo curso. Devuelve el id del curso insertado.
+            </summary>
+            <param name="c">Objeto Course que contiene todos los datos del curso que se quiere insertar</param>
+            <returns>Devuelve el id del curso insertado si todo va bien y -1 si no se inserta</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.ICourseManager.Remove(System.Int32)">
+            <summary>
+            Metodo para eliminar el curso que se correpsonde con el id que se pasa por parametro.
+            </summary>
+            <param name="ID">id del curso a eliminar de tipo int</param>
+            <returns>devuelve true si se realizo correctamente y false si hubo algun problema</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.IPersonaManager.getAll">
+            <summary>
+            Metodo que devuelve la lista de personas almacenadas en la base de datos
+            </summary>
+            <returns>Devuelve un List de Person</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.IPersonaManager.get(System.Int32)">
+            <summary>
+            Metodo que obtiene los datos de la persona que se corresponde con le id que se pasa por parametro.
+            </summary>
+            <param name="ID">Id de la persona que queremos obtener. Es un int</param>
+            <returns>Devuelve un objeto de tipo Person</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.IPersonaManager.add(Practica3_MF0493.Person)">
+            <summary>
+            Metodo para añadir una nueva persona. Devuelve el id de la persona insertada.
+            </summary>
+            <param name="p">Objeto Person que contiene todos los datos de la persona que se quiere insertar excepto el id que se genera automatico al insertar.</param>
+            <returns>Devuelve el id de la persona insertada si todo va bien y -1 si no se inserta</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.IPersonaManager.remove(System.Int32)">
+            <summary>
+            Metodo para eliminar la persona que se correpsonde con el id que se pasa por parametro.
+            </summary>
+            <param name="ID">id de la persona a eliminar de tipo int</param>
+            <returns>devuelve true si se realizo correctamente y false si hubo algun problema</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.PersonManager.getAll">
+            <summary>
+            Metodo que devuelve la lista de personas almacenadas en la base de datos
+            </summary>
+            <returns>Devuelve un List de Person</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.PersonManager.get(System.Int32)">
+            <summary>
+            Metodo que obtiene los datos de la persona que se corresponde con le id que se pasa por parametro.
+            </summary>
+            <param name="ID">Id de la persona que queremos obtener. Es un int</param>
+            <returns>Devuelve un objeto de tipo Person</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.PersonManager.add(Practica3_MF0493.Person)">
+            <summary>
+            Metodo para añadir una nueva persona. Devuelve el id de la persona insertada.
+            </summary>
+            <param name="p">Objeto Person que contiene todos los datos de la persona que se quiere insertar excepto el id que se genera automatico al insertar. </param>
+            <returns>Devuelve el id de la persona insertada si todo va bien y -1 si no se inserta</returns>
+        </member>
+        <member name="M:Practica3_MF0493.Models.PersonManager.remove(System.Int32)">
+            <summary>
+            Metodo para eliminar la persona que se correpsonde con el id que se pasa por parametro.
+            </summary>
+            <param name="ID">id de la persona a eliminar de tipo int</param>
+            <returns>devuelve true si se realizo correctamente y false si hubo algun problema</returns>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.LabelError">
+            <summary>
+            LabelError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.txtApellidos">
+            <summary>
+            txtApellidos control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.txtNombre">
+            <summary>
+            txtNombre control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.txtFechaIngreso">
+            <summary>
+            txtFechaIngreso control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.txtFechaInscripcion">
+            <summary>
+            txtFechaInscripcion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevaPersona.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.LabelError">
+            <summary>
+            LabelError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.txtID">
+            <summary>
+            txtID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.txtNombre">
+            <summary>
+            txtNombre control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.txtCreditos">
+            <summary>
+            txtCreditos control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.txtDepartamento">
+            <summary>
+            txtDepartamento control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.nuevoCurso.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.persona.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.persona.ScriptManager1">
+            <summary>
+            ScriptManager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.persona.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Practica3_MF0493.persona.GridView1">
+            <summary>
+            GridView1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>
